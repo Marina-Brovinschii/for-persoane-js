@@ -1,0 +1,29 @@
+<script>
+    let persoane=[
+        {nume:'Druta', prenume:'Maria', virsta:26},
+        { nume: 'Popusoi', prenume: 'Cristina', virsta: 36 },  
+        { nume: 'Popescu', prenume: 'Vladimir', virsta: 18 },
+        { nume: 'Mircescu', prenume: 'Serghei', virsta: 43 },
+        { nume: 'Cojocari', prenume: 'Iulia', virsta: 20 }, 
+        { nume: 'Vieru', prenume: 'Natalia', virsta: 38 },
+        { nume: 'Birliba', prenume: 'Iurie', virsta: 54 },
+        { nume: 'Manea', prenume: 'Corneliu', virsta: 23 },
+        { nume: 'Buden', prenume: 'Anca', virsta: 33 }
+    ]
+    let res=[]
+
+    for(let i=0; i<persoane.length; i++){
+        if(persoane[i].virsta>35){
+            res.push(persoane[i])
+        }
+    }
+    console.log(res)
+
+    res=[]
+    for(let p of persoane){
+        if(p.virsta>45){
+            res.push(p)
+        }
+    }
+    console.log(res)
+</script>
